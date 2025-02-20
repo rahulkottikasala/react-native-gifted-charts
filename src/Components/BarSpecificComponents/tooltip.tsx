@@ -29,7 +29,7 @@ const Tooltip = (props: TooltipProps) => {
           leftSpacing -
           (isLast ? leftShiftForLastIndexTooltip : leftShiftForTooltip) -
           leftShiftTooltipForCentering,
-        zIndex: 1000,
+        zIndex: 1000- props.index,
         transform: [{rotate: horizontal ? '-90deg' : '0deg'}],
       }}
       onLayout={event => {
