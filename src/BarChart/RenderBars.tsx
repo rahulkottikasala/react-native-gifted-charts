@@ -404,7 +404,7 @@ const RenderBars = (props: RenderBarsPropsType) => {
           {barContent()}
         </TouchableOpacity>
       )}
-      {renderTooltip && selectedIndex === index && (
+      {renderTooltip && (
         <Tooltip {...tooltipProps} />
       )}
     </>
